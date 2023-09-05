@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url('Background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+
+  .logo img {
+    max-width: 100px; 
+    height: 100px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-left: 20px;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .Account-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .signup-button {
+    background-color: #3d9970; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .signin-button {
+    background-color: #333; 
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .main {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .welcome-heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color:#333;
+    font-weight: bold; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-style: solid;
+    border-color: #3d9970;
+    padding: 20px;
+  }
+  
+  .image-container {
+    text-align: left;
+    margin-bottom: 10px; 
+  }
+
+  .image-container img {
+    max-width: 80%;
+    height:fit-content;
+  }
+
+  .text-container {
+    text-align: left;
+    white-space: nowrap;
+    font-size: xx-large;
+    margin-right: 30%;
+    margin-bottom: 0%;
+    color: white;
+    font-weight: bold; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+
+  .text-container h3 {
+    margin-top: 50px;
+    color:#3d9970;
+    font-weight: bold; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-weight: bold; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+
+  @media screen and (max-width: 390px) {
+    .nav ul {
+      gap: 10px; /* Further decreased the gap */
+      padding-left: 5px; /* Further decreased the padding */
+    }
+  
+    .signup-button,
+    .signin-button {
+      padding: 6px 12px; /* Further decreased padding */
+      font-size: 12px; /* Further decreased font size */
+    }
+  
+    .welcome-heading {
+      font-size: 20px; /* Further decreased font size */
+    }
+  
+    .content-container {
+      padding: 10px; /* Decreased padding for content container */
+    }
+  
+    .image-container {
+      margin-bottom: 10px; /* Further increased margin */
+    }
+  
+    .text-container {
+      font-size: 16px; /* Further decreased font size */
+      margin-bottom: 10px; /* Further increased margin */
+    }
+  
+    .footer {
+      padding: 5px; /* Further decreased padding */
+      font-size: 12px; /* Further decreased font size */
+    }
+  }
