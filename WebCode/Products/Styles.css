@@ -71,14 +71,14 @@
   }
   
   .grid-container {
-    display: flex; /* Use flexbox for centering and positioning next to each other */
-    gap: 50px; /* Spacing between the boxes */
+    display: flex;
+    gap: 50px; 
     margin-left: 400px;
   }
   
   .image-box {
     width: 500px;
-    padding: 100px; /* Add padding to create space around each box */
+    padding: 100px; 
     background-color:  #333;
     border-style: solid;
     border-color: #3d9970;
